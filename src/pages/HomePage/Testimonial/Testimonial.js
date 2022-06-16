@@ -7,56 +7,69 @@ import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { AiFillStar } from 'react-icons/ai';
-import student from '../../../images/testimonial/student.png'
+import student from '../../../images/testimonial/student.png';
+import './Testimonial.css'
 
 
 
 const Testimonial = () => {
     return (
-        <section class="testimonial-one">
-            <div class="testimonial-one-shape" style={{ backgroundimage: 'url(assets/images/shapes/testimonial-one-shape-dark.png)' }}></div>
-            <div class="container">
-                <div class="section-title text-center">
-                    <div class="section-sub-title-box">
-                        <p class="section-sub-title">testimonials</p>
-                        <div class="section-title-shape-1">
+        <section className="testimonial-one">
+            <div className="testimonial-one-shape" style={{ backgroundimage: 'url(assets/images/shapes/testimonial-one-shape-dark.png)' }}></div>
+            <div className="container">
+                <div className="section-title text-center">
+                    <div className="section-sub-title-box">
+                        <p className="section-sub-title">testimonials</p>
+                        <div className="section-title-shape-1">
                             <img src="assets/images/shapes/section-title-shape-1.png" alt="" />
                         </div>
                     </div>
-                    <h2 class="section-title__title">What they’re talking <br /> about us</h2>
+                    <h2 className="section-title__title">What they’re talking <br /> about us</h2>
                 </div>
 
 
 
                 <Swiper
                     // install Swiper modules
-                    modules={[Navigation, Pagination, Scrollbar, A11y]}
-                    spaceBetween={50}
-                    slidesPerView={3}
+                    modules={[Navigation, Scrollbar, A11y]}
+                    spaceBetween={20}
 
-                    pagination={{ clickable: true }}
+
+                    pagination
                     loop={true}
-                    onSwiper={(swiper) => console.log(swiper)}
-                    onSlideChange={() => console.log('slide change')}
+                    breakpoints={{
+                        640: {
+                            slidesPerView: 1,
+                            spaceBetween: 20,
+                        },
+                        768: {
+                            slidesPerView: 2,
+                            spaceBetween: 40,
+                        },
+                        1024: {
+                            slidesPerView: 2,
+                            spaceBetween: 50,
+                        },
+                    }}
                 >
 
 
                     <SwiperSlide>
-                        <div class="item">
-                            <div class="testimonial-one__single">
-                                <div class="testimonial-one__client-info">
-                                    <div class="testimonial-one__client-img-box">
-                                        <div class="testimonial-one__client-img">
+                        <div className="item">
+                            <div className="testimonial-one__single">
+                                <div className="testimonial-one__client-info">
+                                    <div className="testimonial-one__client-img-box">
+                                        <div className="testimonial-one__client-img">
                                             <img src={student} alt="" />
                                         </div>
                                     </div>
-                                    <div class="testimonial-one__client-details">
-                                        <h4 class="testimonial-one__client-name fedbacknamedesign">Priti Das</h4>
-                                        <p class="testimonial-one__client-sub-title">Student</p>
+                                    <div className="testimonial-one__client-details">
+                                        <h4 className="testimonial-one__client-name fedbacknamedesign">Priti Das</h4>
+                                        <p className="testimonial-one__client-sub-title">Student</p>
                                     </div>
                                 </div>
-                                <p class="testimonial-one__text fedbackdescritiontext">5 stars for design quality, but also for prompt new customer service and great attention to details work.</p>
-                                <div class="testimonial-one__rating">
+                                <p className="testimonial-one__text fedbackdescritiontext">5 stars for design quality, but also for prompt new customer service and great attention to details work.</p>
+                                <div className="testimonial-one__rating">
                                     <AiFillStar />
                                     <AiFillStar />
                                     <AiFillStar />
@@ -67,22 +80,22 @@ const Testimonial = () => {
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div class="item">
-                            <div class="testimonial-one__single">
-                                <div class="testimonial-one__client-info">
-                                    <div class="testimonial-one__client-img-box">
-                                        <div class="testimonial-one__client-img">
+                        <div className="item">
+                            <div className="testimonial-one__single">
+                                <div className="testimonial-one__client-info">
+                                    <div className="testimonial-one__client-img-box">
+                                        <div className="testimonial-one__client-img">
                                             <img src={student} alt="" />
 
                                         </div>
                                     </div>
-                                    <div class="testimonial-one__client-details">
-                                        <h4 class="testimonial-one__client-name fedbacknamedesign">Priti Das</h4>
-                                        <p class="testimonial-one__client-sub-title">Student</p>
+                                    <div className="testimonial-one__client-details">
+                                        <h4 className="testimonial-one__client-name fedbacknamedesign">Priti Das</h4>
+                                        <p className="testimonial-one__client-sub-title">Student</p>
                                     </div>
                                 </div>
-                                <p class="testimonial-one__text fedbackdescritiontext">5 stars for design quality, but also for prompt new customer service and great attention to details work.</p>
-                                <div class="testimonial-one__rating">
+                                <p className="testimonial-one__text fedbackdescritiontext">5 stars for design quality, but also for prompt new customer service and great attention to details work.</p>
+                                <div className="testimonial-one__rating">
                                     <AiFillStar />
                                     <AiFillStar />
                                     <AiFillStar />
@@ -93,22 +106,22 @@ const Testimonial = () => {
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div class="item">
-                            <div class="testimonial-one__single">
-                                <div class="testimonial-one__client-info">
-                                    <div class="testimonial-one__client-img-box">
-                                        <div class="testimonial-one__client-img">
+                        <div className="item">
+                            <div className="testimonial-one__single">
+                                <div className="testimonial-one__client-info">
+                                    <div className="testimonial-one__client-img-box">
+                                        <div className="testimonial-one__client-img">
                                             <img src={student} alt="" />
 
                                         </div>
                                     </div>
-                                    <div class="testimonial-one__client-details">
-                                        <h4 class="testimonial-one__client-name fedbacknamedesign">Priti Das</h4>
-                                        <p class="testimonial-one__client-sub-title">Student</p>
+                                    <div className="testimonial-one__client-details">
+                                        <h4 className="testimonial-one__client-name fedbacknamedesign">Priti Das</h4>
+                                        <p className="testimonial-one__client-sub-title">Student</p>
                                     </div>
                                 </div>
-                                <p class="testimonial-one__text fedbackdescritiontext">5 stars for design quality, but also for prompt new customer service and great attention to details work.</p>
-                                <div class="testimonial-one__rating">
+                                <p className="testimonial-one__text fedbackdescritiontext">5 stars for design quality, but also for prompt new customer service and great attention to details work.</p>
+                                <div className="testimonial-one__rating">
                                     <AiFillStar />
                                     <AiFillStar />
                                     <AiFillStar />
@@ -119,22 +132,22 @@ const Testimonial = () => {
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div class="item">
-                            <div class="testimonial-one__single">
-                                <div class="testimonial-one__client-info">
-                                    <div class="testimonial-one__client-img-box">
-                                        <div class="testimonial-one__client-img">
+                        <div className="item">
+                            <div className="testimonial-one__single">
+                                <div className="testimonial-one__client-info">
+                                    <div className="testimonial-one__client-img-box">
+                                        <div className="testimonial-one__client-img">
                                             <img src={student} alt="" />
 
                                         </div>
                                     </div>
-                                    <div class="testimonial-one__client-details">
-                                        <h4 class="testimonial-one__client-name fedbacknamedesign">Priti Das</h4>
-                                        <p class="testimonial-one__client-sub-title">Student</p>
+                                    <div className="testimonial-one__client-details">
+                                        <h4 className="testimonial-one__client-name fedbacknamedesign">Priti Das</h4>
+                                        <p className="testimonial-one__client-sub-title">Student</p>
                                     </div>
                                 </div>
-                                <p class="testimonial-one__text fedbackdescritiontext">5 stars for design quality, but also for prompt new customer service and great attention to details work.</p>
-                                <div class="testimonial-one__rating">
+                                <p className="testimonial-one__text fedbackdescritiontext">5 stars for design quality, but also for prompt new customer service and great attention to details work.</p>
+                                <div className="testimonial-one__rating">
                                     <AiFillStar />
                                     <AiFillStar />
                                     <AiFillStar />

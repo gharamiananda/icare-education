@@ -1,4 +1,5 @@
 import React from 'react';
+import Header from '../../components/Header/Header';
 import About from './About/About';
 import Banner from './Banner/Banner';
 import Certificate from './Certificate/Certificate';
@@ -12,6 +13,7 @@ import WhyChooseOne from './WhyChooseOne/WhyChooseOne';
 const Home = () => {
     return (
         <div className='page-wrapper'>
+
             <Banner></Banner>
             <FeatureTop></FeatureTop>
             <About></About>

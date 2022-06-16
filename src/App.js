@@ -3,23 +3,51 @@ import './App.css';
 import Home from './pages/HomePage/Home';
 import Navbar from './components/Navbar/Navbar';
 import { Routes, Route, Link } from "react-router-dom";
-import AboutPage from './pages/About/AboutPage';
+import AboutPage from './pages/AboutPage/AboutPage';
+import Collages from './pages/Collages/Collages';
+import Courses from './pages/Courses/Courses';
+
 import Footer from './components/Footer/Footer';
+import { useEffect, useState } from 'react';
+import loader from '../src/images/loader.png'
 
 function App() {
+
+
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false)
+    }, 5000)
+  }, [])
+
   return (
-    <div className="">
-      <Navbar></Navbar>
+    <>
+      {
+        loading ? <img src={loader} /> :
 
 
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="about" element={<AboutPage />} />
-      </Routes>
 
-      <Footer></Footer>
+          <div class="custom-cursor">
+            <div class="custom-cursor__cursor"></div>
+            <div class="custom-cursor__cursor-two"></div>
+            <Navbar></Navbar>
 
-    </div>
+
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="about" element={<AboutPage />} />
+              <Route path="collages" element={<Collages />} />
+              <Route path="courses" element={<Courses />} />
+            </Routes>
+
+            <Footer></Footer>
+
+          </div>
+      }
+    </>
   );
 }
 

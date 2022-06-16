@@ -15,6 +15,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+import './Banner.css'
 
 const Banner = () => {
     return (
@@ -34,12 +35,16 @@ const Banner = () => {
                 navigation={{ clickable: true }}
                 pagination={{ clickable: true }}
                 loop={true}
-                onSwiper={(swiper) => console.log(swiper)}
-                onSlideChange={() => console.log('slide change')}
+
             >
+
                 <SwiperSlide>
                     <div className="image-layer"
-                        style={{ backgroundImage: `url(${banner1})` }}></div>
+                        style={{ background: " rgb(0, 0, 0)", background: `linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(13, 13, 13, 0.8) 78%, rgba(0, 0, 0, 0.25) 96%), url(${banner1})` }}>
+
+
+
+                    </div>
                     {/* <!-- /.image-layer --> */}
 
                     <div className="container">
@@ -59,7 +64,11 @@ const Banner = () => {
                     </div></SwiperSlide>
                 <SwiperSlide>
                     <div className="image-layer"
-                        style={{ backgroundImage: `url(${banner2})` }}></div>
+                        style={{ background: " rgb(0, 0, 0)", background: `linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(13, 13, 13, 0.8) 78%, rgba(0, 0, 0, 0.25) 96%), url(${banner2})` }}></div>
+
+
+
+
                     {/* <!-- /.image-layer --> */}
 
                     <div className="container">
@@ -76,7 +85,9 @@ const Banner = () => {
                             </div>
                         </div>
 
-                    </div></SwiperSlide>
+                    </div>
+
+                </SwiperSlide>
 
 
             </Swiper>

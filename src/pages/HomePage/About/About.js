@@ -4,7 +4,9 @@ import iabout1 from '../../../images/resources/iabout1.jpg'
 import aboutOneSatisfied from '../../../images/shapes/about-one-satisfied-shape-1.png'
 import sectionTitleShape1 from '../../../images/shapes/section-title-shape-1.png'
 import aboutOneShape from '../../../images/shapes/about-one-shape.png';
-import './About.css'
+import './About.css';
+// import AnimatedNumber from 'react-animated-number';
+
 
 const About = () => {
 
@@ -47,7 +49,10 @@ const About = () => {
                                         </div>
                                         <div class="about-one__satisfied-content">
                                             <div class="about-one__satisfied-count-box">
-                                                <h3 class="odometer odometer-auto-theme" data-count="98"><div class="odometer-inside"><span class="odometer-digit"><span class="odometer-digit-spacer">88</span></span></div></h3>
+                                                <h3 class="odometer odometer-auto-theme" data-count="98"><div class="odometer-inside"><span class="odometer-digit">
+
+
+                                                    <span class="odometer-digit-spacer">88</span></span></div></h3>
                                                 <span class="about-one__satisfied-percent">%</span>
                                             </div>
                                             <p class="about-one__satisfied-text">Satisfied Students</p>

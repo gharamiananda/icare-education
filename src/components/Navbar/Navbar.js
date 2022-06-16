@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Navbar.css'
 import logo from '../../images/resources/icare.png';
 import { AiFillFacebook } from 'react-icons/ai';
@@ -9,10 +9,26 @@ import { FiMapPin } from 'react-icons/fi';
 import { GoMailRead } from 'react-icons/go';
 import { FiPhoneCall } from 'react-icons/fi';
 import { GoSearch } from 'react-icons/go';
-import { BsFillArrowRightCircleFill } from 'react-icons/bs';
+import { AiOutlineArrowRight } from 'react-icons/ai';
+import { FaBars } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
+    // Sticky Menu Area
+    useEffect(() => {
+        window.addEventListener('scroll', isSticky);
+        return () => {
+            window.removeEventListener('scroll', isSticky);
+        };
+    });
+
+
+    /* Method that will fix header after a specific scrollable */
+    const isSticky = (e) => {
+        const header = document.querySelector('.stricked-menu');
+        const scrollTop = window.scrollY;
+        scrollTop >= 250 ? header.classList.add('stricky-fixed') : header.classList.remove('stricky-fixed');
+    };
     return (
         <div className="page-wrapper">
             <header className="main-header-two clearfix">
@@ -92,7 +108,7 @@ const Navbar = () => {
                                 <div className="main-menu-two__wrapper-inner-bg"></div>
                                 <div className="main-menu-two__left">
                                     <div className="main-menu-two__main-menu-box">
-                                        <a href="#" className="mobile-nav__toggler"><i className="fa fa-bars"></i></a>
+                                        <a href="#" className="mobile-nav__toggler"><i className="fa fa-bars"><FaBars /></i></a>
                                         <ul className="main-menu__list">
                                             <li className="current">
                                                 <Link to="/">Home </Link>
@@ -101,10 +117,10 @@ const Navbar = () => {
                                                 <Link to="/about">About Icare</Link>
                                             </li>
                                             <li>
-                                                <a href="colleges.html">Colleges</a>
+                                                <Link to="/collages">Colleges</Link>
                                             </li>
                                             <li>
-                                                <a href="courses.html">Courses</a>
+                                                <Link to="courses">Courses</Link>
                                             </li>
                                             <li>
                                                 <a href="academics.html">Academics</a>
@@ -125,7 +141,7 @@ const Navbar = () => {
                                         </a>
                                     </div>
                                     <div className="main-menu-two__btn-box">
-                                        <a href="contact.html" className="thm-btn main-menu-two__btn"><BsFillArrowRightCircleFill /> Enquiry</a>
+                                        <a href="contact.html" className="thm-btn main-menu-two__btn"><i> <AiOutlineArrowRight /></i> Enquiry</a>
                                     </div>
                                 </div>
                             </div>

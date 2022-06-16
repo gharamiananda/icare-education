@@ -420,7 +420,7 @@ ul {
   animation-duration: 2s;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
-  /* background-image: url(../images/loader.png); */
+  background-image: url(../src/images/loader.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 60px auto;
@@ -2395,7 +2395,7 @@ ul {
 
 .main-slider .swiper-slide {
   position: relative;
-  background-color: var(--roofsie-black);
+  background-color: #090809;
 }
 
 .main-slider .container {

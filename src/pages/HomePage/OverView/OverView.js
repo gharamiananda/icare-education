@@ -25,7 +25,7 @@ const OverView = () => {
                                 <a href="#" class="video-popup">
                                     <div class="trust-company__video-icon">
                                         <span class="fa fa-play"></span>
-                                        <i class="ripple">  <BsFillPlayFill /></i>
+                                        <i class="ripple">  </i>
                                     </div>
                                 </a>
                             </div>
@@ -43,7 +43,7 @@ const OverView = () => {
                             <ul class="list-unstyled trust-compay__points">
                                 <li>
                                     <div class="icon">
-                                        <span class="icon-tick"></span><TiTick />
+                                        <span class="icon-tick"></span> <i><TiTick /></i>
                                     </div>
                                     <div class="text">
                                         <p><a href="#" class="obrviewlnk">IGNOU Study Centre @ ICARE</a></p>
@@ -51,7 +51,7 @@ const OverView = () => {
                                 </li>
                                 <li>
                                     <div class="icon">
-                                        <span class="icon-tick"></span><TiTick />
+                                        <span class="icon-tick"></span> <i><TiTick /></i>
                                     </div>
                                     <div class="text">
                                         <p><a href="#" class="obrviewlnk">Career@ICARE</a></p>
@@ -59,7 +59,7 @@ const OverView = () => {
                                 </li>
                                 <li>
                                     <div class="icon">
-                                        <span class="icon-tick"></span><TiTick />
+                                        <span class="icon-tick"></span> <i><TiTick /></i>
                                     </div>
                                     <div class="text">
                                         <p><a href="#" class="obrviewlnk">Campus Tour</a></p>
@@ -67,7 +67,7 @@ const OverView = () => {
                                 </li>
                                 <li>
                                     <div class="icon">
-                                        <span class="icon-tick"></span><TiTick />
+                                        <span class="icon-tick"></span> <i><TiTick /></i>
                                     </div>
                                     <div class="text">
                                         <p><a href="#" class="obrviewlnk">Videos & Audio</a></p>
@@ -75,7 +75,7 @@ const OverView = () => {
                                 </li>
                                 <li>
                                     <div class="icon">
-                                        <span class="icon-tick"></span> <TiTick />
+                                        <span class="icon-tick"></span>  <i><TiTick /></i>
                                     </div>
                                     <div class="text">
                                         <p><a href="#" class="obrviewlnk">MNGO & Social Welfare</a></p>
@@ -83,7 +83,7 @@ const OverView = () => {
                                 </li>
                                 <li>
                                     <div class="icon">
-                                        <span class="icon-tick"></span><TiTick />
+                                        <span class="icon-tick"></span> <i><TiTick /></i>
                                     </div>
                                     <div class="text">
                                         <p><a href="#" class="obrviewlnk">Tenders</a></p>
@@ -91,7 +91,7 @@ const OverView = () => {
                                 </li>
                                 <li>
                                     <div class="icon">
-                                        <span class="icon-tick"></span><TiTick />
+                                        <span class="icon-tick"></span> <i><TiTick /></i>
                                     </div>
                                     <div class="text">
                                         <p><a href="#" class="obrviewlnk">Research and Development Centre</a></p>
@@ -99,7 +99,7 @@ const OverView = () => {
                                 </li>
                                 <li>
                                     <div class="icon">
-                                        <span class="icon-tick"></span><TiTick />
+                                        <span class="icon-tick"></span> <i><TiTick /></i>
                                     </div>
                                     <div class="text">
                                         <p><a href="#" class="obrviewlnk">Central Tool Room & Testing Laboratories</a></p>

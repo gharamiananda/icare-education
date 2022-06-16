@@ -226,3 +226,25 @@
 .project-one__carousel.owl-carousel .owl-dots .owl-dot span {
     display: none;
 }
+
+.project-one.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: -50px var(--swiper-pagination-bullet-horizontal-gap, 4px);
+}
+
+.project-one__bottom-wrapper .swiper.swiper-initialized.swiper-horizontal.swiper-pointer-events {
+    overflow: unset;
+}
+
+span.swiper-pagination-bullet.swiper-pagination-bullet-active,
+span.swiper-pagination-bullet {
+    width: 14px;
+    height: 14px;
+    background-color: green;
+}
+
+span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    width: 16px;
+    height: 16px;
+    background-color: var(--roofsie-base);
+}
