@@ -123,23 +123,23 @@ const Navbar = () => {
                                                 <Link to="courses">Courses</Link>
                                             </li>
                                             <li>
-                                                <a href="academics.html">Academics</a>
+                                                <Link to="/academics">Academics</Link>
                                             </li>
                                             <li>
-                                                <a href="admission.html">Admission</a>
+                                                <Link to="/admission">Admission</Link>
                                             </li>
                                             <li>
-                                                <a href="contact-us.html">Contact us</a>
+                                                <Link to="/contact-us">Contact us</Link>
                                             </li>
                                         </ul>
                                     </div>
                                 </div>
                                 <div className="main-menu-two__right">
-                                    <div className="main-menu-two__search-box">
+                                    {/* <div className="main-menu-two__search-box">
                                         <a href="#" className="main-menu-two__search search-toggler icon-magnifying-glass">
                                             <GoSearch />
                                         </a>
-                                    </div>
+                                    </div> */}
                                     <div className="main-menu-two__btn-box">
                                         <a href="contact.html" className="thm-btn main-menu-two__btn"><i> <AiOutlineArrowRight /></i> Enquiry</a>
                                     </div>

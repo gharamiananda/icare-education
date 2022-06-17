@@ -11,19 +11,16 @@ import './About.css';
 const About = () => {
 
 
+    const [about, setAbout] = useState([]);
 
-    // const [counter, setCounter] = useState(0);
-
-    // useEffect(() => {
-    //     const interval = setInterval(() => {
-
-    //         setCounter((counter) => counter + 1);
-
-
-    //     }, 100);
+    useEffect(() => {
+        fetch('http://localhost:5000/about_home')
+            .then(res => res.json())
+            .then(data => setAbout(data));
+    }, [])
 
 
-
+    console.log(about)
 
     // }, []);
     return (

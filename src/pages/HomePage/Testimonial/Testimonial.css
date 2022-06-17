@@ -1,4 +1,1 @@
-.testimonial-one .swiper-pointer-events {
-    /* touch-action: pan-y; */
-    overflow: unset;
-}
+.testimonial-one .swiper-pointer-events {}

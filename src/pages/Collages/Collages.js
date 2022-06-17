@@ -15,23 +15,8 @@ const Collages = () => {
 
     return (
         <div>
-            <InnerBanner></InnerBanner>
-            <section class="page-header">
-                <div class="page-header-bg" style={{ backgroundImage: ` url(${main1})` }}>
-                </div>
-                <div class="container">
-                    <div class="page-header__inner">
-                        <ul class="thm-breadcrumb list-unstyled">
-                            <li><a href="index.html">Home</a></li>
-                            <li><span>/</span></li>
-                            <li>Colleges</li>
-                        </ul>
-                        <h2> Our Colleges</h2>
+            <InnerBanner title='Our Collages'></InnerBanner>
 
-
-                    </div>
-                </div>
-            </section>
             <OurCollage></OurCollage>
             <Testimonial></Testimonial>
             <Certificate />

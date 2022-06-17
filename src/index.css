@@ -2391,6 +2391,7 @@ ul {
   position: relative;
   display: block;
   z-index: 91;
+  background: black;
 }
 
 .main-slider .swiper-slide {

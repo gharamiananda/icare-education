@@ -4,27 +4,27 @@ import { useLocation } from 'react-router-dom';
 
 
 
-const InnerBanner = () => {
+const InnerBanner = (props) => {
     const location = useLocation();
 
-    console.log(location, typeof location?.pathname)
+    console.log(props.title)
 
 
     const breadcum = location?.pathname.split('/')[1]
 
     return (
         <div>
-            <section class="page-header">
-                <div class="page-header-bg" style={{ backgroundImage: ` url(${main1})` }}>
+            <section className="page-header">
+                <div className="page-header-bg" style={{ backgroundImage: ` url(${main1})` }}>
                 </div>
-                <div class="container">
-                    <div class="page-header__inner">
-                        <ul class="thm-breadcrumb list-unstyled">
+                <div className="container">
+                    <div className="page-header__inner">
+                        <ul className="thm-breadcrumb list-unstyled">
                             <li><a href="index.html">Home</a></li>
                             <li><span>/</span></li>
                             <li>{breadcum}</li>
                         </ul>
-                        <h2> Our {breadcum}</h2>
+                        <h2>  {props.title}</h2>
 
 
                     </div>
